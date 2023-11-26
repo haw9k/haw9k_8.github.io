@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>GoslingCorporation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+</head>
+<body>
+    <div class="tg">
+        <header class="navbar navbar-expand-lg ">
+            <div class="container text-center">
+            <a class="navbar-brand" href="#">
+                <img src="logo-round.png" alt="Логотип" width="30" height="30" class="d-inline-block align-top img-fluid">
+                </a><h1><strong>Gosling Corporation</strong></h1>
+            
+            <nav class="navbar navbar-expand-lg bg-body-orange" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler active btn btn-outline-orange" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#links">Список гиперссылок</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#form">Форма</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#table">Таблица</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Калькуляторы
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#calculate1">Калькулятор 1</a></li>
+                        <li><a class="dropdown-item" href="#calculate2">Калькулятор 2</a></li>
+                      </ul>
+                    </li>
+                    <button id="openFormButton" class="btn">Открыть форму</button>
+                </ul>
+                </div>
+            </div>
+            </nav>
+            </div>
+        </header>
+        <div class="wrap lh-lg">
+        <ul class="list-unstyled-sm">
+            <li id="links"><strong>Список ссылок</strong></li>
+      <li><a href = "http://www.kubsu.ru/"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+      <li><a href = "https://www.kubsu.ru/"> Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+      <li><a href="#"><img src="image.jpeg" width="200" alt="My dream"></a></li>
+      <li><a href = "sell.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+      <li><a href = "index.html">Сокращенная ссылка на главную страницу</a></li>
+      <li><a href = "#contact" >Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href = "https://www.google.com/search?q=%D0%B2%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F&oq=%D0%B2%D0%B8%D0%BA%D0%B5%D0%BF%D0%B5&aqs=chrome">Ссылка с тремя параметрами в URL</a></li>
+      <li><a href = "https://hackertyper.com/?id=123">Ссылка с параметром id в URL</a></li>
+      <li><a href="./sell.html">Относительная на страницу в текущем каталоге</a></li>
+      <li><a href="about/sell.html">Относительная на страницу в каталоге about</a></li>
+      <li><a href="about/sell.html"> Относительная на страницу в каталоге уровнем выше текущего</a></li>
+      <li><a href="about/under_about/sell.html"> Относительная на страницу в каталоге двумя уровнями выше</a></li>
+      <li> Мир, достоинство и равенство на здоровой планете! <a href="https://www.un.org/ru/"> ООН </a> </li>
+      <li><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5#%D0%A1%D0%BB%D0%BE%D0%BD%D1%8B_%D0%BD%D0%B0_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B5">Ссылка в википедии о  слонах на войне</a></li>
+      <li><img src = "https://i.pinimg.com/564x/50/8c/8d/508c8d9874c6bf6e8aeb76a9efcb5ee1.jpg" usemap = "#shape" style="width: 200px;">
+          <map name = "shape" >
+              <area shape = "rect" coords = "0, 0, 120, 60" href = "https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82" alt = "Квадрат" >
+              <area shape = "circle" coords = "419, 236, 354" href = "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt = "Круг." >
+          </map>
+      </li>
+      <li><a href = "">Ссылка с пустым href</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="https://media.universeodon.com/media_attachments/files/110/533/989/149/791/566/original/27415bca4ad19c82.jpg" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+      <li><a href="https://media.universeodon.com/media_attachments/files/110/533/989/149/791/566/original/27415bca4ad19c82.jpg" rel="nofolow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <li>
+        <ol>
+          <li><a href = "https://www.kubsu.ru/ru/university">Университет</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/education">Образование</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/science">Наука и инновации</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+          <li><a href = "https://www.kubsu.ru/ru/studlife">Студентам</a></li>
+        </ol>
+      </li>
+      <li>
+            <a id="button" href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Скачать файл</a>
+        </li>
+    </ul>
+</div>
+<form action="/" method="POST" id="form" class="row g-3 needs-validation" >
+    <h3 id="form">Форма</h3>
+
+    <div class="col-auto">
+    <label for="validationCustom01" class="form-label">Фамилия Имя Отчество:</label>
+    <input type="text" placeholder="ФИО" class="form-control rounded-pill" id="validationCustom01" value="" required=""/>
+    <div class="valid-feedback">Looks good!</div>
+    </div>
+
+    <div class="col-auto">
+    <label for="validationCustomUsername" class="form-label">Телефон:
+    </label>
+    <div class="input-group has-validation">
+    <input type="text" class="form-control rounded-pill" placeholder="Введите ваш номер" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
+    <div class="invalid-feedback"></div>
+    </div>
+    </div>
+
+    <div class="col-auto">
+    <label for="validationCustomUsername" class="form-label">E-mail:</label>
+    <div class="input-group has-validation">
+    <input type="text" class="form-control rounded-pill" placeholder="Введите ваш E-mail" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
+    <div class="invalid-feedback"></div>
+    </div>
+    </div>
+
+    <div class="col-auto">
+    <label>
+        Дата рождения:<br />
+        <input name="field-date" class="form-control rounded-pill" placeholder="2004-07-14" type="date" required=""/></label>
+    </div>
+
+    <div class="col-auto">
+    <p>Выберите ваш пол:<br /></p>
+    <div class="form-check ">
+        <input class="form-check-input" type="radio" id="someRadioId1" name="someGroupName" required=""/>
+        <label class="form-check-label" for="someRadioId1">Женский</label>
+    </div>
+    <div class="form-check ">
+        <input class="form-check-input" type="radio" id="someRadioId2" name="someGroupName"/>
+        <label class="form-check-label" for="someRadioId2">Мужской</label>
+    </div>
+    </div>
+
+    <div class="col-auto">
+    <label for="validationCustom04" class="form-label">Любимый язык программирования</label>
+    <select class="form-select rounded-pill" id="validationCustom04" required="">
+        <option selected="" disabled="" value="">Выберете</option>
+        <option value="Значение1">Pascal</option>
+        <option value="Значение2">C</option>
+        <option value="Значение3">C++</option>
+        <option value="Значение4">JavaScript</option>
+        <option value="Значение5">PHP</option>
+        <option value="Значение6">Python</option>
+        <option value="Значение7">Java</option>
+        <option value="Значение8">Haskel</option>
+        <option value="Значение9">Clojure</option>
+        <option value="Значение10">Prolog</option>
+        <option value="Значение11">Scala</option>
+    </select>
+    <div class="invalid-feedback"></div>
+    </div>
+    <div class="col-auto">
+    <label>Биография:<br />
+        <textarea name="field-name-2" class="form-control rounded-pill" placeholder="Напишите свою биографию" required=""></textarea></label>
+    </div>
+    <div class="col-auto">
+    С контрактом:
+    <div class="form-check icheck-material-orange">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required=""/>
+        <label class="form-check-label" for="invalidCheck">
+        Ознакомлен (а)
+        </label>
+        <div class="invalid-feedback"></div>
+    </div>
+    </div>
+    <div class="col-auto">
+    <button class="btn btn-primary " type="submit">Сохранить</button>
+    </div>
+</form>
+<div id="table" class="container1 mt-4">
+    <h2>Таблица "Герои игры Dota2"</h2>
+        <table  class="table table-striped-sm">
+<tbody>
+  <tr>
+    
+    <th rowspan="2">герой</th>
+    <th rowspan="2">опис</th>
+    <th rowspan="2">поз</th>
+    <th colspan="2">% побед </th>
+  
+  </tr>
+  <tr><th>high</th><th>low</th></tr>
+</thead>
+  <tr>
+    <td>Terror<br/>blade</td>
+    <td>Хороший</td>
+    <td>Керри</td>
+    <td>60%</td>
+    <td>40%</td>
+  </tr>
+  <tr>
+    <td>Treant<br/> Protector</td>
+    <td>Хороший</td>
+    <td>поддержка</td>
+    <td>35%</td>
+    <td>65%</td>
+  </tr>
+  <tr>
+    <td>Faceless<br/> Void</td> 
+    <td>Отличный</td>
+    <td>Керри</td>
+    <td>70%</td>
+    <td>30%</td>
+  </tr>
+  <tr>
+    <td>Queen <br/>of Pain</td>
+    <td>Отличный</td>
+    <td>Мид</td>
+    <td>55%</td>
+    <td>45%</td>
+  </tr>
+  <tr>
+    <td>Grim<br/>stroke</td>
+    <td>Отличный</td>
+    <td>поддержка</td>
+    <td>50%</td>
+    <td>50%</td>
+  </tr>
+  <tr>
+    <td>Legion <br/>Commander</td>
+    <td>Отличный</td>
+    <td>инициатор</td>
+    <td>55%</td>
+    <td>45%</td>
+  </tr>
+ 
+</tbody>
+</table>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+<p></p>
+</div>
+<div class="container2" bg="#edbf96" id="calculate1">
+  <label for="quantity">Количество товара:</label>
+  <input type="number" id="quantity" name="quantity"><br><br>
+
+  <label for="product">Выберите товар:</label>
+  <select id="product" name="product">
+  <option value="10">Товар 1 - 10 рублей</option>
+  <option value="20">Товар 2 - 20 рублей</option>
+  <option value="30">Товар 3 - 30 рублей</option>
+  </select><br><br>
+
+  <button class="button1" onclick="calculate()">Подсчитать стоимость</button><br><br>
+</div>
+
+<script>
+  function calculate() {
+  var quantity = document.getElementById("quantity").value;
+  var product = document.getElementById("product").value;
+   var result = quantity * product;
+  alert("Стоимость заказа: " + result + " рублей");
+  }
+</script>
+
+<div class="container3 text-center" id="calculate2">
+  <div class="row">
+    <p>Меню</p>
+    <div class="col" >
+      <p>Выберите машину: </p>
+      <select name="product-choice"  onclick="change()">
+        <option value="1">Volkswagen Passat</option>
+        <option value="2">Hyundai Santa Fe</option>
+        <option value="3">Land Rover Range</option>
+      </select>
+    </div>
+    <p></p>
+    <br />
+    <div id="option-choices" ></div>
+    <div class="col">
+      <p>
+        Введите количество:
+        <input id="amount-of-products" type="number" min="1" max="3" value="1"/>
+      </p>
+    </div>
+    <div class="col">
+      <br />
+      <input type="button" value="Рассчитать сумму заказа" onclick="getSum()" />
+      <div id="result"></div>
+      <script src="main.js"></script>
+    </div>
+  </div>
+</div>
+<div class="slider lazy" id="carouselExampleIndicators">
+    
+  <div>
+    <div class="image">
+      <img src="1.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <img src="2.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <img src="4.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <img src="3.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <img src="6.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <img src="5.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <img src="8.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="image">
+      <img src="7.jpg" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="main.js"></script>
+<div class="wrap8 text-center" >
+  <div id="popupForm" class="popup">
+    <form id="feedbackForm" class="feedback-form" method="POST"
+    action="https://api.slapform.com/JgYvTFOzr" >
+      <h5><strong><em>Форма обратной связи</em></strong></h5>
+      <div class="form-group">
+        <label for="fullName">ФИО:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="organization">Организация:</label>
+        <input type="text" id="organization" name="organization">
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Я согласен(-на) с политикой обработки персональных данных</label>
+      </div>
+      <div class="form-group">
+        <button class="loky" type="submit" value="Отправить">Отправить</button>
+      </div>
+      <div class="form-group">
+      <button class="lok" onclick="closePopup()">Назад</button></div>      
+    </form>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+<footer>
+  <div class="container text-center">
+    <div class="footer-bg-sm"><p>© Ребров А.М.</p></div></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
